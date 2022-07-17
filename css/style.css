@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'drfont_daraehand';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/drfont_daraehand.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body{
+    font-family: 'drfont_daraehand';
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden{
+    display: none;
+}
+#frame{
+    background: url(../img/frame.png) no-repeat center center;
+    width: 500px;
+    height: 700px;
+    position: relative;
+}
+
+#clock{
+    position: absolute;
+    top:70px;
+    left:70px;
+    font-size: 25px;
+}
+#weather{
+    position: absolute;
+    top:90px;
+    right:70px;
+    font-size: 25px;
+}
+
+#emoji{
+    position: absolute;
+    top:15%;
+    left:50%;
+    transform: translateX(-50%);
+    font-size: 150px;
+}
+
+#login_form{
+    position: absolute;
+    top:48%;
+    left:29%;
+}
+#login_form .namePlace{
+    width: 100px;
+    font-size: 20px;
+    text-align: center;
+    outline: 0;
+    font-family: 'drfont_daraehand';
+    height: 25px;
+    border: 1px dashed #333;
+}
+#login_form .nameBtn{
+    height: 30px;
+    vertical-align: 4px;
+    /* background-color: #f1f1f1; */
+    outline: 0;
+    border:0;
+    background-color:crimson;
+    color:#fff;
+}
+#login_form .nameBtn:hover{
+    color:cadetblue;
+}
+#greeting{
+    position: absolute;
+    top:38%;
+    right:40%;
+    font-size: 50px;
+}
+
+#todo_form{
+    position: absolute;
+    left:50%;
+    bottom: 34%;
+    transform: translateX(-49%);
+}
+
+#todo_form .todoPlace{
+    width: 250px;
+    text-align: center;
+    border: 1px dashed #333;
+    outline: 0;
+    font-size: 15px;
+    font-family: 'drfont_daraehand';
+
+}
+#todo_list{
+    position: absolute;
+    top:64%;
+    left:20%;
+}
+#todo_list li{
+    line-height: 1.4;
+}
+#todo_list li span{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+#todo_list li button{
+    font-size: 15px;
+    background-color: transparent;
+    outline:0;
+    border: 0;
+}
+#todo_list li button:hover{
+    opacity: 0.5;
+}
